@@ -1,0 +1,188 @@
+/*Game Style*/
+
+#gameOver {
+    position: absolute;
+    left: 300px;
+    width: 400px;
+    top: 100px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px #444;
+    display: none;
+    z-index: 100;
+}
+
+#finalScore {
+    font-size: 24px;
+}
+
+#gameScore {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    color: white;
+}
+
+#gameTimer {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+#timing {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#gameTimer input {
+    width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#timerButton {
+    border-radius: 10px;
+}
+
+#withoutTimer {
+    border-radius: 10px;
+    float: right;
+}
+
+#playAgain {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+#restart {
+    border-radius: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.btn:hover {
+    background-color: #444;
+    color: white;
+}
+
+#gameSpeed {
+    position: absolute;
+    top: 200px;
+    left: 880px;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 10px;
+    background: linear-gradient(to right, red, yellow);
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    transform: rotate(90deg);
+    border-radius: 5px;
+    z-index: 5;
+}
+
+#gameSpeed:hover {
+    opacity: 1;
+}
+
+#gameSpeed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: lightgreen;
+    cursor: pointer;
+}
+
+#gameSpeed::-moz-range-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: lightgreen;
+    cursor: pointer;
+}
+
+#gameSpeedValue {
+    position: absolute;
+    top: 70px;
+    left: 960px;
+    color: white;
+}
+
+#gameNet {
+    position: absolute;
+    top: 80px;
+    left: 340px;
+    width: 100px;
+    transform: scaleY(-1) rotate(20deg);
+}
+
+#character {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    width: 100px;
+    z-index: 1;
+}
+
+#gameIns {
+    display: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 20px;
+    width: 1000px;
+    height: 100px;
+    background-color: #e8e8e8;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px #444;
+    position: relative;
+    padding: 0px;
+}
+
+#closeGmIns {
+    margin-top: 0px;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    right: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+#closeGmIns:hover {
+    transform: scale(1.2);
+}
+
+#gmInstructions {
+    margin-top: 0px;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#container2 button {
+    cursor: pointer;
+}
+
+#cAnimation {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

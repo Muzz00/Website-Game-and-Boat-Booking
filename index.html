@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <title>Wakatipu Boat Adventure</title>
+    <link rel="shortcut icon" href="images/ship-icon.png" type="image/x-icon" />
+    <style>
+        /*Skeleton of the Website*/
+        body {
+            margin: 0;
+            background-size: cover;
+            /*Previosly was: 1500px 1200px*/
+            background-repeat: repeat;
+            background-color: red;
+            background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+        }
+
+        .mainHead {
+            max-height: 90px;
+            width: 100%;
+            background-image: url(images/waves2.png);
+            background-color:#dff4ff;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px #444;
+        }
+
+        #pageHeading {
+            float: left;
+            margin-left: 140px;
+            font-size: 50px;
+            margin-top: 15px;
+            color: darkblue;
+            font-family: serif;
+            text-shadow: 1px 1px 2px white, 0 0 1em #8888FF, 0 0 0.2em white;
+        }
+
+        /*If screen is less than 600px reduce the heading size*/
+        @media (max-width: 600px) {
+            #pageHeading {
+                font-size: 35px;
+            }
+        }
+
+        /*Boat Image*/
+        #boatImage {
+            float: left;
+            margin-left: 40px;
+            margin-top: 10px;
+            height: 70px;
+            animation-name: boatAnimation;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+        }
+
+        /*Animation for the boat in the heading*/
+        @keyframes boatAnimation {
+            20% {
+                margin-top: 0px;
+            }
+
+            40% {
+                margin-top: 11px;
+            }
+
+            60% {
+                margin-top: 0px;
+            }
+
+            80% {
+                margin-top: 11px;
+            }
+
+            100% {
+                margin-left: 650px;
+                margin-top: 0px;
+            }
+        }
+
+        .mainContainer {
+            margin: 20px;
+            width: 1000px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 10px #444;
+        }
+
+        /*Landing Page/ Home Page style*/
+        #landingInfo {
+            float: left;
+            margin: 20px 15px 20px 5px;
+            height: 420px;
+            width: 340px;
+            background-color: #e8e8e8;
+            box-shadow: 0px 0px 5px #888;
+        }
+
+        #landingBookBoat {
+            float: left;
+            margin-top: 20px;
+            margin-right: 5px;
+            height: 200px;
+            width: 635px;
+            background-color: #e8e8e8;
+        }
+
+
+        #landingPlayGame {
+            float: left;
+            margin-top: 20px;
+            margin-right: 5px;
+            margin-bottom: 20px;
+            height: 200px;
+            width: 635px;
+            background-color: #e8e8e8;
+        }
+
+        .linkDivs:hover {
+            box-shadow: 0px 0px 10px #444;
+            cursor: pointer;
+        }
+
+        .linkDivs:hover .arrowToContainer {
+            transition: 0.2s;
+            transform: scale(1);
+        }
+
+        /**/
+        #nav {
+            float: left;
+            background-color: lightblue;
+            height: 40px;
+            margin: 0;
+            padding: 0;
+            width: 1000px;
+        }
+
+        .navButton {
+            text-align: center;
+            padding: 9px 20px;
+            float: left;
+            border: 0.5px solid white;
+            background-color: none;
+            color: darkblue;
+            font-family: serif;
+            font-weight: bold;
+            font-size: 19px;
+            border-radius: 15px 15px 5px 5px;;
+        }
+
+        .navButton:hover {
+            background-color: #107dac;
+            color: white;
+            cursor: pointer;
+        }
+
+        .subContainer {
+            float: left;
+            width: 1000px;
+            height: 460px;
+        }
+
+        /**/
+
+        /*Container representing each part of Assignment e.g. Part1, Part 2*/
+        #container0 {
+            display: block;
+        }
+
+        #container1 {
+            background-color: lightgrey;
+            display: none;
+        }
+
+        #container2 {
+            background: url(images/gameBackground1.png) no-repeat center center fixed;
+            background-size: cover;
+            display: none;
+            position: relative;
+        }
+
+        #container3 {
+            background-color: none;
+            display: none;
+            text-align: center;
+        }
+
+        #container4 {
+            background-color: none;
+            display: none;
+            text-align: center;
+        }
+
+        /**/
+
+        /*FOOTER*/
+        footer {
+            background-color: #333;
+            margin: 0px 0 0px;
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+            color: #fff;
+        }
+
+        /*Home Page/LandingPage*/
+        .introImg {
+            margin-top: 30px;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .introBorder {
+            height: 180px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-left: 1px solid black;
+            float: left;
+            width: 2px;
+        }
+
+        .introContent {
+            background-color: #282d6a;
+            float: left;
+            margin-left: 5px;
+            height: 180px;
+            margin-top: 10px;
+            width: 290px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .arrowToContainer {
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            font-size: 40px;
+            color: white;
+            transition: 0.2s;
+            transform: scale(0.6);
+        }
+
+        /**/
+        /*Documentation*/
+        .docsHeading {
+            color: 	darkblue;
+        }
+
+        .docsHr {
+            width: 80%;
+        }
+
+        .docsContent {
+            margin: 40px auto;
+            height: 50px;
+            background-color: lightblue;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px #444;
+        }
+
+        .docsContent a {
+            padding: 10px 20px;
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 20px;
+            color: darkblue;
+        }
+
+        .docsContent:hover {
+            background-color: #282d6a;
+        }
+        
+        .docsContent a:hover{
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="gameStyle.css" type="text/css">
+    <link rel="stylesheet" href="bookingStyle.css" type="text/css">
+    <script>
+        //SHOWING AND HIDING CONTAINERS
+        function showContainer0() {
+            document.getElementById('container0').style.display = "block";
+            document.getElementById('container1').style.display = "none";
+            document.getElementById('container2').style.display = "none";
+            document.getElementById('container3').style.display = "none";
+            document.getElementById('container4').style.display = "none";
+            activeNav("nav0");
+            closeGameIns();
+        }
+
+        function showContainer1() {
+            document.getElementById('container0').style.display = "none";
+            document.getElementById('container1').style.display = "block";
+            document.getElementById('container2').style.display = "none";
+            document.getElementById('container3').style.display = "none";
+            document.getElementById('container4').style.display = "none";
+            activeNav("nav1");
+            closeGameIns();
+        }
+        function showContainer2() {
+            document.getElementById('container0').style.display = "none";
+            document.getElementById('container1').style.display = "none";
+            document.getElementById('container2').style.display = "block";
+            document.getElementById('container3').style.display = "none";
+            document.getElementById('container4').style.display = "none";
+            activeNav("nav2");
+        }
+        function showContainer3() {
+            document.getElementById('container0').style.display = "none";
+            document.getElementById('container1').style.display = "none";
+            document.getElementById('container2').style.display = "none";
+            document.getElementById('container3').style.display = "block";
+            document.getElementById('container4').style.display = "none";
+            activeNav("nav3");
+            closeGameIns();
+        }
+        function showContainer4() {
+            document.getElementById('container0').style.display = "none";
+            document.getElementById('container1').style.display = "none";
+            document.getElementById('container2').style.display = "none";
+            document.getElementById('container3').style.display = "none";
+            document.getElementById('container4').style.display = "block";
+            activeNav("nav4");
+            closeGameIns();
+        }
+        //
+
+        //SETTING ACTIVE changing colours when nav button is clicked
+        //By default the first nav should be active
+        function defNav() {
+            activeNav("nav0");
+        }
+        //When the user clicks a nav button the below function is executed
+        function activeNav(elem) {
+            var i;
+            var btnLen = document.getElementsByClassName("navButton").length;
+            for (i = 0; i < btnLen; i++) { //This loop removes any current active background and color
+                var concat = "nav" + i;
+                if (document.getElementById(concat).style.color == "white") {
+                    document.getElementById(concat).style.backgroundColor = "";
+                    document.getElementById(concat).style.color = "";
+                    document.getElementById(concat).style.boxShadow = "";
+                }
+            }
+
+            //Set a new Active Bg and Color for the selected element
+            document.getElementById(elem).style.backgroundColor = "#001a33";
+            document.getElementById(elem).style.color = "white";
+            document.getElementById(elem).style.boxShadow = "0px 0px 10px #001a33";
+        }
+        //
+
+    </script>
+</head>
+
+<body onload="loadGame(); defNav(); updateweather();">
+    <div class="mainHead">
+        <h1 id="pageHeading">Wakatipu Boat Adventure</h1>
+        <img src="images/ship-icon.png" alt="Boat Image" id="boatImage">
+    </div>
+    <div class="mainContainer">
+        <div id="nav">
+            <div class="navButton" onclick="showContainer0()" id="nav0">Home Page</div>
+            <div class="navButton" onclick="showContainer1()" id="nav1">Book Boat</div>
+            <div class="navButton" onclick="showContainer2(); showGameIns(); playPowerUp();" id="nav2">Play Game</div>
+            <div class="navButton" onclick="showContainer3()" id="nav3">Documentation Part 1</div>
+            <div class="navButton" onclick="showContainer4()" id="nav4">Documentation Part 2</div>
+        </div>
+        <!--DOCUMENTATION PART 1-->
+        <div id="container0" class="subContainer">
+            <div id="landingInfo">
+               
+                <iframe width="340px" height="420px" src="https://www.youtube.com/embed/TgaTb_BoJbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </div>
+            <div id="landingBookBoat" class="linkDivs" onclick="showContainer1();">
+                <img src="images/lake.jpg" alt="gameIntroImg" class="introImg" height="140px" width="300px">
+                <div class="introBorder"></div>
+                <div class="introContent">
+                    <h1 style="color: white;">Lake Wakatipu</h1>
+                    <p style="color: white; font-size: 17px; margin: 0px 2px;">Click here to book your trip today to Lake Wakatipu!. Watch the video on the left for more information about the lake!</p>
+                    <p class="arrowToContainer">&#8605;</p>
+                </div>
+            </div>
+            <div id="landingPlayGame" class="linkDivs" onclick="showContainer2(); showGameIns();">
+                <img src="images/gameIntroImg.PNG" alt="gameIntroImg" class="introImg" height="140px">
+                <div class="introBorder"></div>
+                <div class="introContent">
+                    <h1 style="color: white;">Bug Catcher</h1>
+                    <p style="color: white; font-size: 17px; margin: 0px 2px;">Score points as you catch you use the net to catch the bug!</p>
+                    <p class="arrowToContainer">&#8605;</p>
+                </div>
+            </div>
+        </div>
+        <!--BOOK BOAT-->
+        <div id="container1" class="subContainer">
+
+            <div class="left">
+                
+                <h1 class="heading"> Wakatipu Boat Adventure</h1>
+                <h1 class="heading" id="text2"> Spirit Bay Boat Adventure</h1>
+                
+                <img src="images/ship_image.png" alt="Ship" style="margin-left: 480px;">
+                
+                <h1 class="book">Book your trip now!</h1>
+
+
+                <br><br>
+                <label>Date:</label>
+                <input type="date" id="datepicker" class="all-inputs date-p" onchange="updateweather()">
+                
+                <div id="message-when-cold">
+                    <p class="weather-msg">The weather is not looking good! </p>
+                    <p class="weather-msg">Pick another day (or override the weather to be a nice day).</p>
+                </div>
+                
+                <div id="booking-details">
+                    <label>Time:</label>
+                    <select id="time" class="selectTime">
+                        <option>10:00 am
+                        </option>
+                        <option>2:00 pm
+                        </option>
+                    </select>
+                    <br><br>
+
+                    <label>Number of people:</label>
+                    <input type="number" id="number-of-people" class="all-inputs" min="1" value="1" onkeydown="return false">
+                    <br><br>
+
+                    <label>Boat:</label>
+                    <table id="boatButtons" style="display: inline;"></table>
+                    <br><br>
+
+                    <script src="bookingScript.js"></script>
+
+
+                    <label id="select-info"></label>
+                    <br><br>
+                    
+                    <div id="layout-instructions" style="display: none">
+                        <label id="title-hover-layout" style="font-size: 25px;"></label><br>
+                        <label style="font-weight: 100;">Hover over seat to view more details.</label><br><br>
+                        
+                        <center>
+                        <div style="border: solid 1px; width: 550px; padding-top: 10px; padding-bottom: 10px;">
+                            <label style="font-weight: 200;">Layout key: </label>
+                            <label style="font-weight: 100;">Available</label>
+                            <img src="images/green-chair.png" alt="Green chair" class="chairs">
+                            <label style="font-weight: 100;">Selected</label>
+                            <img src="images/blue-chair-highlight.png" alt="Blue chair" class="chairs">
+                            <label style="font-weight: 100;">Booked</label>
+                            <img src="images/red-chair.png" alt="Red chair" class="chairs"> 
+                        </div>
+                        </center>    
+                    </div>
+                    
+                    <table id="boat">
+                    </table>
+
+                    <br><br>
+
+                    <hr style="border: 2px solid darkblue; border-radius: 20px; width: 90%;">
+                    <br>
+                    <label>Boat menu:</label>
+
+
+                    <label>Hover over menu item to view description</label>
+                    <br><br>
+
+                    <table class="meal-menu" id="menu">
+                    </table>
+                    <br>
+                </div>
+                
+            </div>
+
+            <div class="right">
+
+<!--                <img src="images/sun.png" alt="Sun" class="weather-img" id="weather"><br>-->
+                <div id="weather"></div>
+                
+                
+                <label class="switch" >
+                    <input type="checkbox" id="override-weather" onclick="overrideWeather()">
+                    <span class="slider round"></span>
+                </label> 
+                <label style="font-size: 19px; font-weight: 100; color: darkslategray;">Override weather</label><br><br>
+                
+                
+                <div id="weather-controls" style="display: none">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="switch" >
+                    <input type="checkbox" checked id="make-it-rain" onclick="overrideWeather()">
+                    <span class="slider round"></span>
+                </label>
+                <label style="font-size: 17px; font-weight: 100; color: darkslategray;">Make it rain</label><br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="switch" >
+                    <input type="checkbox" checked id="make-it-cold" onclick="overrideWeather()">
+                    <span class="slider round"></span>
+                </label><label style="font-size: 17px; font-weight: 100; color: darkslategray;">Make it cold</label><br><br>
+                </div>
+                
+<!--                <input type="checkbox" id="check-weather" style="width: 20px; height: 20px;">-->
+                <center>
+                    
+                    <div id="confirmation-box">
+                        <div class="list-items">
+                            <h3 style="text-align: left; padding-left: 10px;">Seats:</h3>
+                            <table id="total-cost-seats">
+                            </table>
+
+                            <hr style="border: 1px solid darkblue; width: 200px;">
+                            <h3 style="text-align: left; padding-left: 10px;">Food:</h3>
+                            <table id="total-cost-food">    
+                            </table>
+                        </div>
+                        <br>
+
+                        <label id="final-total">Final total: $0.00</label>
+                        <br>
+                        <button class="btn-confirm" onclick="confirm();" id="alert">Confirm</button>
+                        
+                    </div>
+                </center>
+
+            </div>
+            <script src="menuScript.js"></script>
+        </div>
+
+        <!--PLAY GAME-->
+        <div id="container2" class="subContainer">
+            <div id="gameOver">
+                <h1>Game Over</h1><br>
+                <p id="finalScore"></p>
+                <button class="btn" id="playAgain" onclick="restart();">Play Again</button>
+            </div>
+            <p id="gameScore">Score: 0</p>
+            <div id="gameTimer">
+                <p id="timing">4 minutes 00 seconds</p>
+
+                <select id="timeoutNum">
+                    <option value="1">1 minute</option>
+                    <option value="3">3 minute</option>
+                    <option value="4" selected="selected">4 minute</option>
+                    <option value="5">5 minute</option>
+                </select>
+                <button class="btn" id="timerButton" onclick="setTimer()">Set Timer</button><br>
+                <button class="btn" id="withoutTimer" onclick="withoutTimer();">Run Without Timer</button>
+                <button class="btn" id="restart" onclick="restart();">Restart</button>
+            </div>
+            <p id="gameSpeedValue">14ms</p>
+            <input onchange="gameSpeedChange()" type="range" min="3" max="30" value="14" id="gameSpeed">
+            <canvas id="game" width="1000px" height="460px"></canvas> <!--Canvas for game animation-->
+            <canvas id="cAnimation" width="1000px" height="460px"></canvas> <!--Canvas for character animation-->
+            <img src="images/shaggyrogers.png" id="character">
+            <img src="images/net.png" id="gameNet">
+            <script src="gameScript.js"></script>
+        </div>
+
+        <!--DOCUMENTATION PART 1-->
+        <div id="container3" class="subContainer">
+            <h1 class="docsHeading">Documentation for Part 1 ~ Book Boat</h1>
+            <hr class="docsHr">
+
+            <div class="docsContent" style="width: 300px;">
+                <a href="Documentation/wireframes/homeWireframe.pdf" target=" _blank">Home/Landing Wireframe</a>
+            </div>
+            <div class="docsContent" style="width: 300px;">
+                <a href="Documentation/wireframes/booking-detailed.pdf" target=" _blank">Detailed booking page</a>
+            </div>
+            <div class="docsContent" style="width: 300px;">
+                <a href="Documentation/wireframes/booking-inGeneral.pdf" target=" _blank">Booking page in general</a>
+            </div>
+            <div class="docsContent" style="width: 300px;">
+                <a href="Testing/booking-Testing.pdf" target=" _blank">Booking page Testing</a>
+            </div>
+
+        </div>
+        <!--DOCUMENTATION PART 2-->
+        <div id="container4" class="subContainer">
+            <h1 class="docsHeading">Documentation for Part 2 ~ Play Game</h1>
+            <hr class="docsHr">
+            <div class="docsContent" style="width: 200px;">
+                <a href="Documentation/wireframes/gameWireframe.pdf" target="_blank">Game Wireframe</a>
+            </div>
+            <div class="docsContent" style="width: 200px;">
+                <a href="Documentation/wireframes/gameStoryBoard.pdf" target="_blank">Game Story Board</a>
+            </div>
+            <div class="docsContent" style="width: 200px;">
+                <a href="Documentation/gameTestCase.pdf" target="_blank">Game Test Case</a>
+            </div>
+            <div class="docsContent" style="width: 200px;">
+                <a href="Documentation/game6Seconds.pdf" target="_blank">Proof of 6 Seconds</a>
+            </div>
+        </div>
+    </div>
+    <!--Game Instructions-->
+    <div id="gameIns">
+        <p id="closeGmIns" onclick="closeGameIns();">&#10008;</p>
+        <p id="gmInstructions">Use the arrow keys to move the player around. Click the spacebar to toggle net down or
+            up. A range slider is provided to set the difficulty and the interval time value is located on top.
+            <strong>Good
+                Luck!!</strong>
+        </p>
+    </div>
+</body>
+<footer>
+    <p>&copy; Mohamed Muzzammil P A</p>
+    <p>2020 ~ All rights reserved </p>
+</footer>
+
+</html>
+<!--
+    References:
+
+    //GAME REFERECNES
+    Game Img Source: https://opengameart.org/content/space-backdrop
+    Open Source Free Images https://opengameart.org/content/background-art-collection
+    Shaggy Rogers - https://www.stickpng.com/img/cartoons/scoobydoo/shaggy-rogers
+    Net - https://www.cleanpng.com/png-fishing-nets-hand-net-rope-fishing-nets-1305279/
+    Game sound:
+    Bubble pop Sound: http://soundbible.com/2067-Blop.html
+    Character Hit Sound: http://soundbible.com/2068-Woosh.html
+    Power UP Sound: http://soundbible.com/1639-Power-Up.html
+    Game Over Sound: http://soundbible.com/1858-Metroid-Door.html
+    /*Game sounds happen when circle hit human or net, game container is clicked, game over*/
+    //
+
+    GAME NOTES:
+    PROOF THAT MOVEMENT TIME FOR EACH BUG IS 6S
+    
+    Height of 420px needs to be covered in 6 seconds (6000ms) there for to cover 1 second it takes 14.285714285714
+
+    Answer:
+    420 : 6000 = 1 : 14.285714285714
+
+    Solution:
+
+    Since
+    420 : 6000 = 1 : X
+
+    Then we know
+    6000/420 = X/1
+
+    Multiplying both sides by 1 cancels on the right
+    1 × (6000/420) = (X/1) × 1
+    1 × (6000/420) = X
+
+    Then solving for X
+    X = 1 × (6000/420)
+    X = 14.285714285714
+
+    Therefore
+    420 : 6000 = 1 : 14.285714285714
+
+    This tool can be used to calculate the ratio: https://www.calculatorsoup.com/calculators/math/ratios.php
+
+-->
+
+<!--Booking references-->
+<!--
+lake image Photo by Kishan Modi on Unsplash
+chair images for boat booking <a target="_blank" href="https://icons8.com/icons/set/chair">Chair icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+-->

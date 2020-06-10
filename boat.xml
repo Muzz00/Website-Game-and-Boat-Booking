@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BUSINESS>
+    <IMAGELIST>
+        <IMAGE>
+            <CATEGORY>Available</CATEGORY>
+            <LOCATION>images/green-chair.png</LOCATION>
+        </IMAGE>
+        <IMAGE>
+            <CATEGORY>Booked</CATEGORY>
+            <LOCATION>images/red-chair.png</LOCATION>
+        </IMAGE>
+        <IMAGE>
+            <CATEGORY>Selected</CATEGORY>
+            <LOCATION>images/blue-chair.png</LOCATION>
+        </IMAGE>
+    </IMAGELIST>
+    <SECTIONLIST>
+        <SECTION>
+            <SECTION_NAME>Front</SECTION_NAME>
+            <SECTION_COST>30</SECTION_COST>
+        </SECTION>
+        <SECTION>
+            <SECTION_NAME>Middle</SECTION_NAME>
+            <SECTION_COST>25</SECTION_COST>
+        </SECTION>
+        <SECTION>
+            <SECTION_NAME>Back</SECTION_NAME>
+            <SECTION_COST>20</SECTION_COST>
+        </SECTION>
+    </SECTIONLIST>
+    <BOATS>
+        <BOAT>
+            <NAME>Tere</NAME>
+            <CODE>tere</CODE>
+            <MEANING>Fast Boat!</MEANING>
+            <ROW>
+                <LETTER>A</LETTER>
+                <SECTION>Front</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+             <ROW>
+                <LETTER>B</LETTER>
+                <SECTION>Front</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+             <ROW>
+                <LETTER>C</LETTER>
+                <SECTION>Middle</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>D</LETTER>
+                <SECTION>Middle</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>E</LETTER>
+                <SECTION>Middle</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>F</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>G</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>H</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>I</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+        </BOAT>
+        <BOAT>
+            <NAME>Nui</NAME>
+            <CODE>nui</CODE>
+            <MEANING>Big Boat!</MEANING>
+            <ROW>
+                <LETTER>A</LETTER>
+                <SECTION>Front</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>B</LETTER>
+                <SECTION>Front</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>C</LETTER>
+                <SECTION>Middle</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+             <ROW>
+                <LETTER>D</LETTER>
+                <SECTION>Middle</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        <STATUS>Bookes</STATUS>
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                </SEATS>
+            </ROW>
+             <ROW>
+                <LETTER>E</LETTER>
+                <SECTION>Middle</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>F</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>G</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>H</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>I</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>J</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>K</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>1</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>9</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>L</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            <ROW>
+                <LETTER>M</LETTER>
+                <SECTION>Back</SECTION>
+                <SEATS>
+                    <SEAT>
+                        <NUMBER>2</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>3</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>4</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>6</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>7</NUMBER>
+                        
+                    </SEAT>
+                    <SEAT>
+                        <NUMBER>8</NUMBER>
+                        
+                    </SEAT>
+                </SEATS>
+            </ROW>
+            
+        </BOAT>
+    </BOATS>
+</BUSINESS>

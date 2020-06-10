@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MENULIST>
+    <ITEM>
+        <NAME>Chicken sandwich</NAME>
+        <IMG>images/sandwich1.png</IMG>
+        <DESCRIPTION>Chicken, Lettuce, Tomato, Avocado</DESCRIPTION>
+        <TYPE>Meat</TYPE>
+        <PRICE>10</PRICE>
+    </ITEM>
+    <ITEM>
+        <NAME>Club sandwich</NAME>
+        <IMG>images/sandwich2.png</IMG>
+        <DESCRIPTION>Eggs, Tomato, Avocado</DESCRIPTION>
+        <TYPE>Gluten free</TYPE>
+        <PRICE>9</PRICE>
+    </ITEM>
+    <ITEM>
+        <NAME>Salad</NAME>
+        <IMG>images/salad.png</IMG>
+        <DESCRIPTION>Avocado, Tomato, Cucumber, Lettuce</DESCRIPTION>
+        <TYPE>Vegan</TYPE>
+        <PRICE>12</PRICE>
+    </ITEM>
+    <ITEM>
+        <NAME>Chips</NAME>
+        <IMG>images/potato_chips.png</IMG>
+        <DESCRIPTION>Pringles potato chips</DESCRIPTION>
+        <TYPE>Snack</TYPE>
+        <PRICE>3.50</PRICE>
+    </ITEM>
+    <ITEM>
+        <NAME>Sprite</NAME>
+        <IMG>images/sprite.png</IMG>
+        <DESCRIPTION>Lemon Fizzy drink</DESCRIPTION>
+        <TYPE>Drink</TYPE>
+        <PRICE>4</PRICE>
+    </ITEM>
+    <ITEM>
+        <NAME>Coca Cola</NAME>
+        <IMG>images/coca_cola.png</IMG>
+        <DESCRIPTION>Fizzy drink</DESCRIPTION>
+        <TYPE>Drink</TYPE>
+        <PRICE>4</PRICE>
+    </ITEM>
+    <ITEM>
+        <NAME>Cookies</NAME>
+        <IMG>images/cookie.png</IMG>
+        <DESCRIPTION>Chocolate chips cookies</DESCRIPTION>
+        <TYPE>Snack</TYPE>
+        <PRICE>5</PRICE>
+    </ITEM>
+</MENULIST>
+

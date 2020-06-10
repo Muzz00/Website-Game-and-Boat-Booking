@@ -1,0 +1,469 @@
+.left{
+    position: absolute;
+    width: 700px;
+    background-image: url(images/water-bubble.png);
+    background-color:#dff4ff; 
+    height: 460px;
+    overflow-x: hidden;
+}
+
+.book{
+    font-size: 30px;
+	font-weight: 700;
+    margin-left: 30px;
+	color:#416bdf;
+	font-style: oblique;
+	text-shadow: 2px 2px 5px #6AACD0;  
+}
+
+.heading{
+	font-size: 30px;
+	font-weight: 700;
+    margin-left: 30px;
+	color:#416bdf;
+	font-style: oblique;
+	text-shadow: 2px 2px 5px #6AACD0;
+    visibility: hidden;
+    position: absolute;
+    font-family: sans-serif;
+    animation: text-move 5s infinite;
+    animation-delay: 0s;
+}
+
+#text2{
+    animation-delay: 8s;
+}
+
+@keyframes text-move {
+          0% {
+              visibility: visible;
+              color: blue;
+              font-size: 30px;
+              filter: drop-shadow(10px 10px 10px grey);
+          }
+          50% {
+              font-size: 32px;
+              color: darkblue;
+              filter: drop-shadow(10px 10px 10px black);
+          }
+          100% {
+              color: blue;
+              font-size: 30px;
+              filter: drop-shadow(10px 10px 10px grey);
+              opacity: 0;
+          }
+      }
+
+
+.btn-confirm{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: serif;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 3px;
+    font-weight: 800;
+}
+
+.btn-confirm:focus{
+    background-color: darkblue;
+}
+
+.boats-btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: serif;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 15px;
+    font-weight: 800;
+}
+
+.boats-btn:focus{
+    background-color: darkblue;
+}
+/*.boats-btn:hover:before {content:"Fast boat!"}*/
+.boats-btn:hover span {display:none}
+.boats-btn:hover{
+    background-color: white;
+    color: darkblue;
+}
+
+/*
+#.boats-btn:hover:before {content:"Fast boat!"}
+#nui:hover span {display:none}
+#nui:hover:before {content:"Big boat!"}
+#nui:hover{
+    background-color: white;
+    color: darkblue;
+}
+*/
+
+.q-item{
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.meal-menu{
+    font-size: 20px;
+    font-family: serif;
+    padding-left: 10px;
+    color: darkblue;
+}
+
+.th-menu{
+    font-size: 21px;
+    padding-right: 40px;
+}
+
+.menu{
+    padding: 15px;
+}
+
+.right{
+    float: right;
+    width: 300px;
+    height: 460px;
+    background-color: skyblue;
+    overflow-x: hidden;
+}
+
+
+.list-items{
+    background-color: white;
+    width: 270px;
+    height: 200px;
+    overflow-x: hidden;
+    border-radius: 20px;
+    color: darkblue;
+}
+
+.th-item{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+
+.item{
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 8px;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+/*    padding-left: 15px;*/
+    margin-left: 15px;
+    color: darkblue;
+}
+
+#number-of-people{
+    width: 70px;
+    height: 30px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+#time{
+    width: 170px;
+    height: 30px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.date-p {
+    width: 170px;
+    height: 30px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.all-inputs{
+    background-color: skyblue;
+    border-radius: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.selectTime{
+    background-color: skyblue;
+    border-radius: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+.chairs{
+    width: 30px;
+}
+
+#boat{
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+    margin: 20px;
+}
+
+.making-seat{
+    padding: 7px;
+}
+
+.menu-img{
+    height: 120px;
+}
+
+.item-des{
+    font-family: sans-serif;
+    font-size: 19px;
+    padding-left: 15px;
+    color: darkblue;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: lightblue;
+  color: darkblue;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+div.click-to-top span {
+    display: none; 
+    position: absolute;  
+/*    background: #107dac; */
+    background: lightblue;
+    color: darkblue; 
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: serif;
+    font-weight: 500;
+}
+div.click-to-top:hover span {display: block; }
+
+.food-table{
+    padding: 10px;
+}
+
+.seat-table{
+    padding: 10px;
+}
+
+#total-cost-seats{
+    text-align: left;
+    display: block;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+    background-color: snow;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: cornflowerblue; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+
+#weather{
+    color: darkblue;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+/*    padding-left: 20px;*/
+/*    display: inline-block;*/
+}
+
+.weatherImg{
+    height: 90px;
+    float: left;
+/*    padding-left: 10px;*/
+/*    vertical-align: middle;*/
+}
+
+.tempNumber{
+    font-size: 30px;
+/*    display: inline-block;*/
+}
+
+/* retrieved from https://www.w3schools.com/howto/howto_css_switch.asp  */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.weather-msg{
+    font-size: 20px;
+    color: darkblue;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+
+/*retrieved from : https://speckyboy.com/css-js-notification-alert-code/*/
+/*alert style*/
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    left:0px;
+    z-index:10000;
+    background-image:url(tp.png);  /*  required by MSIE to prevent actions on lower z-index elements */
+}
+
+#alertBox {
+    position:relative;
+    width:53%;
+    min-height:350px;
+    max-height:600px;
+    margin-top:50px;
+    border:1px solid #fff;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    top:5%;
+}
+
+#modalContainer > #alertBox {
+    position:fixed;
+}
+
+#alertBox h1 {
+    margin:0;
+    font:bold 2em Raleway,arial;
+    background-color:skyblue;
+    color:#FFF;
+    border-bottom:1px solid skyblue;
+    padding:10px 0 10px 5px;
+}
+
+#alertBox p {
+    height:260px;
+    font-size: 20px;
+    padding-left:30px;
+    padding-top:20px;
+}
+
+#alertBox #closeBtn {
+    display:block;
+    position:relative;
+    margin:10px auto 10px auto;
+    padding:7px;
+    border:0 none;
+    width:70px;
+    font-size: 19px;
+    text-transform:uppercase;
+    text-align:center;
+    color:#FFF;
+    background-color:skyblue;
+    border-radius: 0px;
+    text-decoration:none;
+    outline:0!important;
+}
